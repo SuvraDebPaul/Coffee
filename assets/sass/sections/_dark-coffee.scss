@@ -1,0 +1,31 @@
+@use "../abs/mixins" as *;
+.dark-coffee,
+.cold-coffee,
+.hot-coffee {
+  position: relative;
+  &__content {
+    margin-left: 7rem;
+    margin-top: 13rem;
+  }
+  &__button {
+    margin-top: 8rem;
+  }
+  &__bg {
+    background-image: url("../assets/images/right-flat-shape.jpg");
+    height: 80rem;
+    &--cold {
+      background-image: url("../assets/images/left-flat-shape.jpg");
+      height: 80rem;
+    }
+  }
+  &__image {
+    @include absCenter;
+    top: 56%;
+  }
+  &__paragraph {
+    text-align: right;
+    @include absCenter;
+    top: 56%;
+    left: 78%;
+  }
+}

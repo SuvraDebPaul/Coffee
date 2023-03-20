@@ -1,0 +1,45 @@
+@use "../abs/variables" as *;
+
+.my__btn {
+  display: inline-block;
+  padding: 0.3rem 2.2rem;
+  font-size: 3rem;
+  font-family: var(--RM);
+  color: white;
+  border-radius: 1.5rem;
+  outline: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &--orange {
+    background-color: $color-primary;
+    color: white;
+  }
+  &--orange::after {
+    background-color: $color-primary;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+}

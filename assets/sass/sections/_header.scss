@@ -1,0 +1,22 @@
+@use "../abs/variables" as *;
+
+.header {
+  background-image: url("../assets/images/hero-bg.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__content {
+    margin-top: 8rem;
+  }
+  &__secondary {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: var(--MPR);
+    font-size: 3.3rem;
+    color: $color-primary;
+  }
+  &__paragraph {
+    padding-right: 26rem;
+    margin-bottom: 3rem;
+  }
+}

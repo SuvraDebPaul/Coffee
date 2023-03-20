@@ -1,0 +1,13 @@
+@use "../abs/variables" as *;
+
+.heading__primary {
+  font-family: var(--CGMI);
+  font-size: 15rem;
+  color: $text-color-primary;
+}
+
+.paragraph {
+  font-family: var(--RL);
+  color: $text-color-para;
+  font-size: 1.4rem;
+}

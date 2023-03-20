@@ -1,0 +1,16 @@
+@use "../base/fonts" as *;
+:root {
+  --MPL: MyriadPro-Light;
+  --MPR: MyriadPro-Regular;
+  --MPB: MyriadPro-Bold;
+  --CGL: CormorantGaramond-Light;
+  --CGR: CormorantGaramond-Regular;
+  --CGB: CormorantGaramond-Bold;
+  --CGMI: CormorantGaramond-MediumItalic;
+  --RL: Roboto-Light;
+  --RM: Roboto-Medium;
+}
+
+$text-color-primary: #000033;
+$color-primary: #ff3300;
+$text-color-para: #003333;

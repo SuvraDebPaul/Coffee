@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1 rem = 10px;
+}
+body {
+  font-family: var(--MPR);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: darkgray;
+  box-sizing: border-box;
+}
